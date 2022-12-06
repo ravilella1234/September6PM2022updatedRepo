@@ -1,0 +1,106 @@
+String Agenda:
+-------------
+1) What is a String?
+2) Creating String Classes
+3) Some common String class Methods
+4) Immutability vs Mutability
+
+
+1) What is a String?
+   ----------------- 
+
+A String is a sequence of characters written in double quotes.
+
+"youtube"
+"@facebook"
+"Alley Road"
+"4th May"
+
+
+2) Creating String Classes
+   -----------------------
+
+Strings in java are represented by the String Class.
+Objects of this class are created to store a sequence of characters,which are called  "Strings"
+
+1) Enclose the String literals in quotes.
+
+syntax : String name="ravilella";
+(creating the string using the assignment operator)
+
+
+2) Alternative way to create Strings
+
+ syntax : String n=new String("ravilella");
+
+
+String, 
+StringBuffer, 
+StringBuilder
+
+String (vs) StringBuffer (vs) StringBuilder :
+---------------------------------------------
+1) If the content is fixed and won't change frequently then we should go for String.
+
+2) If the content is not fixed and keep on changing but Thread Safety is required then we should go for StringBuffer.
+
+
+3) If the content is not fixed and keep on changing and thread safety is not required then we should go for StringBuilder.
+
+
+
+
+Different b/w String & String Buffer
+------------------------------------
+
+String is immutable  (which objects can't be changeable)
+String Buffer is mutable ((which objects can be changeable))
+
+1) Once we creates a string object we can't perform any changes in the existing object.If we are trying to perform any changes with those changes a new object will be created.this non changeable nature is nothing but immutablility of the String Object.
+
+2) Once we creates a StringBuffer object we can perform any type of changes in the existing object.This changeble is nothing but mutability of the StringBuffer object.
+
+
+Different b/w String Buffer & String Builder
+--------------------------------------------
+StringBuilder is exactly same as StringBuffer(Including Methods and Constructors) except the following differences.
+
+String Buffer:
+---------------
+1) Every method is synchronized
+2) Thread-Safe
+3) Relatively performance is low
+4) Introduced in java v 1.0
+
+String Builder:
+---------------
+1) Every method is Non-synchronized
+2) Non Thread-Safe
+3) Relatively performance is High
+4) Introduced in java v 1.5
+
+
+
+
+
+
+
+3) Some important methonds in String
+   ---------------------------------
+
+
+1) char charAt(int k)
+       Return the character @ position k
+
+2) int length()
+        Returns the length of the String
+
+3) String toLowerCase(), toUpperCase()
+        Returns a String with lowercase,uppercase characters.
+
+4) int indexOf(String sub)
+        Returns the index of first occurrence of the specified String
+
+
+
+

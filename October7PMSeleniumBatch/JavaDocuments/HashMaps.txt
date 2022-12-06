@@ -1,0 +1,117 @@
+Map in collection
+------------------
+Map will not maintain insertion order.
+Map will store data based on key value pair
+Map will store only unique keys.
+
+       
+Hash Map
+--------
+
+A Hash Map contains values based on the key.
+It contains only unique keys.
+It maintains no order.
+
+
+Example:
+--------
+package Test;
+import java.util.HashMap;
+import java.util.Map;
+
+public class ExampleHashSet 
+{
+           
+            public static void main(String[] args) 
+	    {
+                        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+                        map.put(1, 100);
+                        map.put(20, 100);
+                        map.put(30, 100);
+                        map.put(4, 100);
+                        System.out.println(map);
+            }
+}
+//output: {1=100, 4=100, 20=100, 30=100}
+
+
+To get Data from Hash Map we have use method “get”
+--------------------------------------------------
+           
+package Test;
+import java.util.HashMap;
+import java.util.Map;
+
+public class ExampleHashSet 
+{
+
+            public static void main(String[] args) 
+	    {
+                        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+                        map.put(1, 100);
+                        map.put(20, 100);
+                        map.put(30, 400);
+                        map.put(30, 100);
+                        map.put(30, 600);
+                        map.put(30, 100);
+                        map.put(null, 100);
+                        System.out.println(map.get(1));
+                        System.out.println(map.get(20));
+                        System.out.println(map.get(30));
+            }
+}
+//output:
+100
+100
+100
+
+
+Linked Hash Map will maintain insertion order
+---------------------------------------------
+
+Example:
+--------
+
+package Test;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class ExampleHashSet 
+{
+           
+            public static void main(String[] args) 
+           {
+                        Map<Integer,Integer> map = new LinkedHashMap<Integer,Integer>();
+                        map.put(1, 100);
+                        map.put(20, 100);
+                        map.put(30, 100);
+                        map.put(4, 100);
+                        System.out.println(map);
+            }
+}
+//output: {1=100, 20=100, 30=100, 4=100}
+
+
+Tree Map will store the data in ascending order
+-----------------------------------------------
+
+package Test;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class ExampleHashSet 
+{
+           
+            public static void main(String[] args) 
+	    {
+                        Map<Integer,Integer> map = new TreeMap<Integer,Integer>();
+                        map.put(1, 100);
+                        map.put(20, 100);
+                        map.put(30, 100);
+                        map.put(4, 100);
+                        System.out.println(map);
+            }
+}
+//output: {1=100, 4=100, 20=100, 30=100}
+
+

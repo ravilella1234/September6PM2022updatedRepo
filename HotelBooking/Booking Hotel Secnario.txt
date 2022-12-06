@@ -1,0 +1,38 @@
+
+Travel Website- book hotels
+---------------------------
+Req 1
+goto the hotel website + chickin date + checkout date + adults + select a room + payment + check a mail/mobile for confirmation
+
+Req 2
+goto the hotel website + chickin date + checkout date + adults + select a room + payment(card,googlepay, bank) + check a mail/mobile for confirmation
+
+Req 3
+goto the hotel website + chickin date + checkout date + adults + select a room + payment(card,googlepay, bank) / pay@hotel + check a mail/mobile for confirmation
+
+Req 4
+goto the hotel website + chickin date (within 7 days from today -no cancellation) + checkout date + adults + select a room + payment(card,googlepay, bank) / pay@hotel + check a mail/mobile for confirmation
+
+Req 5
+goto the hotel website + chickin date (within 7 days from today -no cancellation) + checkout date + adults + select a room + payment(card,googlepay, bank)(10-20% discount) / pay@hotel (5-10% discount) + check a mail/mobile for confirmation
+
+
+1) Make a new Booking - search for Hotel + select a room + enter guests info + apply discounts +  select your payment mode + check a mail/mobile for confirmation
+
+
+2) Modify Existing Booking - loadBooking + modify(roomtype, add some additional rooms) + apply discounts + check for cofirmation
+
+
+3) Cancel the Booking
+
+TestNG
+------
+suite - XMlSuite
+test  - XMLTest
+class - XMLClass
+
+
+List<XMLSuite>
+List<XMlTest>
+List<XMLClass>
+

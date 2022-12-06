@@ -1,0 +1,26 @@
+Java Practice Apps
+------------------
+Java Dumps :-
+-----------
+https://play.google.com/store/apps/details?id=com.javahood.javadumps&hl=en
+
+
+java pattern programs app :- 
+-------------------------
+https://play.google.com/store/apps/details?id=com.sitseducators.javapatternprogramsfree&hl=en_IN
+
+
+String Practices:
+-----------------
+https://www.javatpoint.com/java-string
+https://javaconceptoftheday.com/java-interview-programs-on-strings/
+
+
+Collections reference :
+-----------------------
+https://www.java2novice.com/java-collections-and-util/
+
+
+Java Quiz:
+-----------
+https://codescracker.com/exam/showtest.php?subid=1

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Create New Booking Test - pay@hotel">
+  <parameter name="action" value="pay@hotel"></parameter>
+    <classes>
+    
+      <class name="testcases.Booking">
+      	<methods>
+      		<include name="createBooking"></include>
+      		<include name="typeOfRoom"></include>
+      	</methods>
+      </class>
+      
+      <class name="testcases.PaymentManager">
+	      <methods>
+	      	<include name="applyDiscount"></include>
+	      	<include name="makePayment"></include>
+	      </methods>
+      </class>
+      
+      <class name="testcases.CustomerCommunication">
+	      <methods>
+	      	<include name="checkEmailVerification"></include>
+	      	<include name="checkMobileVerification"></include>
+	      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Create New Booking Test - pay@online">
+  <parameter name="action" value="pay@online"></parameter>
+    <classes>
+    
+      <class name="testcases.Booking">
+      	<methods>
+      		<include name="loadBooking"></include>
+      		<include name="cancelBooking"></include>
+      	</methods>
+      </class>
+      
+      <class name="testcases.PaymentManager">
+	      <methods>
+	      	<include name="applyDiscount"></include>
+	      	<include name="makePayment"></include>
+	      </methods>
+      </class>
+      
+      <class name="testcases.CustomerCommunication">
+	      <methods>
+	      	<include name="checkEmailVerification"></include>
+	      	<include name="checkMobileVerification"></include>
+	      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--  <test thread-count="5" name="Modify Existing Booking Test">
+    <classes>
+    
+      <class name="testcases.Booking">
+      	<methods>
+      		<include name="loadBooking"></include>
+      		<include name="typeOfRoom"></include>
+      	</methods>
+      </class>
+      
+      <class name="testcases.PaymentManager">
+	      <methods>
+	      	<include name="applyDiscount"></include>
+	      	<include name="makePayment"></include>
+	      </methods>
+      </class>
+      
+      <class name="testcases.CustomerCommunication">
+	      <methods>
+	      	<include name="checkEmailVerification"></include>
+	      	<include name="checkMobileVerification"></include>
+	      </methods>
+      </class>
+      
+    </classes>
+  </test> --><!-- Test -->
+  
+</suite> <!-- Suite -->

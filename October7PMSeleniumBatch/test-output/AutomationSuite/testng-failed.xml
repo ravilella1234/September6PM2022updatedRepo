@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite]">
+  <test thread-count="5" name="AutomationTest(failed)">
+    <classes>
+      <class name="testng.RadioButton1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="radioButtonTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testng.RadioButton1 -->
+      <class name="testng.CheckBox1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="checkboxTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testng.CheckBox1 -->
+    </classes>
+  </test> <!-- AutomationTest(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
