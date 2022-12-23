@@ -1,91 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1390" started-at="2022-12-21T14:17:11Z" finished-at="2022-12-21T14:17:13Z">
+  <suite name="Default suite" duration-ms="1547" started-at="2022-12-23T14:12:22Z" finished-at="2022-12-23T14:12:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1390" started-at="2022-12-21T14:17:11Z" finished-at="2022-12-21T14:17:13Z">
-      <class name="excelDataDriven.DataManagementwithDataProvider">
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:excelDataDriven.DataManagementwithDataProvider@148080bb]" name="f" duration-ms="15" started-at="2022-12-21T14:17:13Z" data-provider="dp" finished-at="2022-12-21T14:17:13Z">
+    <test name="Default test" duration-ms="1547" started-at="2022-12-23T14:12:22Z" finished-at="2022-12-23T14:12:23Z">
+      <class name="excelDataDriven.DataManagementFinalVersion">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagementFinalVersion@10bdf5e5]" name="f" duration-ms="20" started-at="2022-12-23T14:12:23Z" data-provider="getData" finished-at="2022-12-23T14:12:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[N]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dummy1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dummy2]]>
+                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=ravi2021, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:excelDataDriven.DataManagementwithDataProvider@148080bb]" name="f" duration-ms="5" started-at="2022-12-21T14:17:13Z" data-provider="dp" finished-at="2022-12-21T14:17:13Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagementFinalVersion@10bdf5e5]" name="f" duration-ms="10" started-at="2022-12-23T14:12:23Z" data-provider="getData" finished-at="2022-12-23T14:12:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Y]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dummy3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dummy4]]>
+                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=N, UserPassword=password2, UserName=user2, Browser=firefox}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[testcase is skipped due to Runmode N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: testcase is skipped due to Runmode N
+at excelDataDriven.DataManagementFinalVersion.f(DataManagementFinalVersion.java:17)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:excelDataDriven.DataManagementwithDataProvider@148080bb]" name="f" duration-ms="13" started-at="2022-12-21T14:17:13Z" data-provider="dp" finished-at="2022-12-21T14:17:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[N]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dummy5]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dummy6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- excelDataDriven.DataManagementwithDataProvider -->
+      </class> <!-- excelDataDriven.DataManagementFinalVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
