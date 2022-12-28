@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="excelDataDriven.DataManagementFinalVersion">
+      <class name="pageobjectmodel.POM_001">
         <methods>
-          <include name="f" invocation-numbers="1"/>
+          <include name="endProcess"/>
+          <include name="f"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- excelDataDriven.DataManagementFinalVersion -->
+      </class> <!-- pageobjectmodel.POM_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -59,8 +59,8 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+e+".properties");
 		childProp = new Properties();
 		childProp.load(fis);
-		String url = childProp.getProperty("amazonurl");
-		System.out.println(url);
+		//String url = childProp.getProperty("amazonurl");
+		//System.out.println(url);
 		
 		System.out.println(System.getProperty("user.dir"));
 		fis = new FileInputStream(projectPath+"data.properties");
@@ -81,7 +81,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(browser.equals("chrome")) 
+		if(p.getProperty(browser).equals("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
 			
@@ -93,7 +93,7 @@ public class BaseTest
 			//option.addArguments("--ignore-certificate-errors-spki-list");
 			driver = new ChromeDriver(option);
 		}
-		else if(browser.equals("firefox")) 
+		else if(p.getProperty(browser).equals("firefox")) 
 		{
 			
 			//FirefoxBinary binary = new FirefoxBinary(new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"));
@@ -162,7 +162,7 @@ public class BaseTest
 	{
 		System.out.println("Checking for Element present : " +  locatorKey);
 		//WebDriverWait wait = new WebDriverWait(driver, 30);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver,60);
 		
 		try 
 		{

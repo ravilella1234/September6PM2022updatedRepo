@@ -1,70 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1547" started-at="2022-12-23T14:12:22Z" finished-at="2022-12-23T14:12:23Z">
+  <suite name="Default suite" duration-ms="21347" started-at="2022-12-28T14:15:53Z" finished-at="2022-12-28T14:16:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1547" started-at="2022-12-23T14:12:22Z" finished-at="2022-12-23T14:12:23Z">
-      <class name="excelDataDriven.DataManagementFinalVersion">
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagementFinalVersion@10bdf5e5]" name="f" duration-ms="20" started-at="2022-12-23T14:12:23Z" data-provider="getData" finished-at="2022-12-23T14:12:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=ravi2021, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="21347" started-at="2022-12-28T14:15:53Z" finished-at="2022-12-28T14:16:15Z">
+      <class name="pageobjectmodel.POM_001">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:pageobjectmodel.POM_001@31ef45e3]" name="startProcess" is-config="true" duration-ms="12130" started-at="2022-12-28T14:15:54Z" finished-at="2022-12-28T14:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="f()[pri:0, instance:pageobjectmodel.POM_001@31ef45e3]" name="f" duration-ms="5077" started-at="2022-12-28T14:16:06Z" finished-at="2022-12-28T14:16:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagementFinalVersion@10bdf5e5]" name="f" duration-ms="10" started-at="2022-12-23T14:12:23Z" data-provider="getData" finished-at="2022-12-23T14:12:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=N, UserPassword=password2, UserName=user2, Browser=firefox}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[testcase is skipped due to Runmode N]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: testcase is skipped due to Runmode N
-at excelDataDriven.DataManagementFinalVersion.f(DataManagementFinalVersion.java:17)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.POM_001@31ef45e3]" name="endProcess" is-config="true" duration-ms="4082" started-at="2022-12-28T14:16:11Z" finished-at="2022-12-28T14:16:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- excelDataDriven.DataManagementFinalVersion -->
+        </test-method> <!-- endProcess -->
+      </class> <!-- pageobjectmodel.POM_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
